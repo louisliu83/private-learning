@@ -1,0 +1,2 @@
+Hashing 11000 elements with arbitrary length into into 9 bytes
+Server: bins = 13200, elebitlen = 59 and maskbitlen = 72 and performs 13200 OTs

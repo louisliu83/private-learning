@@ -1,0 +1,39 @@
+{
+    "partyname": "pab",
+    "featureGate": {
+        "datasetPrivate": false,
+        "audit": false
+    },
+    "listen": {
+        "address": "0.0.0.0:8080"
+    },
+    "streamListen":{
+        "address": "0.0.0.0:7766"
+    },
+    "db": {
+        "path": "/tmp/pab/psi.db"
+    },
+    "dataset": {
+        "maxLine": 1000000,
+        "validDays": 90,
+        "dir": "/tmp/pab/dataset",
+        "sharders": 1,
+        "downloaders": 1
+    },
+    "tasks": {
+        "autoRerun": false,
+        "dir": "/tmp/pab/tasks"
+    },
+    "psiExecutor": {
+        "binpath": "/opt/bin/psi",
+        "serverTimeout": 300,
+        "serverConcurrency": 8,
+        "clientConcurrency": 8
+    },
+    "tokenSetting": {
+        "authEnabled": false,
+        "rsaPubKeyFile": "rsaPubKeyFile",
+        "rsaPrivKeyFile": "rsaPrivKeyFile",
+        "tokenValidInHours": 720
+    }
+}

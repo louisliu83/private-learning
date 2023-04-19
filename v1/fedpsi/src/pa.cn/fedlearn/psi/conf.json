@@ -1,0 +1,45 @@
+{
+    "partyname": "pab",
+    "startOnceConfirm": true,
+    "featureGate": {
+        "datasetPrivate": false,
+        "tproxy": false
+    },
+    "tproxy":{
+        "listen": "0.0.0.0:7766",
+        "target": "168.168.168.168:7766"
+    },
+    "listen": {
+        "address": "0.0.0.0:8080",
+        "tlsEnabled": false
+    },
+    "dataset": {
+        "maxLine": 0,
+        "dir": "/tmp/pab/dataset",
+        "downMethod": 1,
+        "sharders": 1
+    },
+    "tasks": {
+        "autoRerun": false,
+        "dir": "/tmp/pab/tasks"
+    },
+    "db": {
+        "path": "/tmp/pab/psi.db"
+    },
+    "psiExecutor": {
+        "publicIP": "127.0.0.1",
+        "publicPort": 10088,
+        "privateIP": "127.0.0.1",
+        "privatePort": 10088,
+        "binpath": "/opt/bin/psi",
+        "serverTimeout": 300
+    },
+    "tokenSetting": {
+        "authEnabled": false,
+        "initAdmin": "admin",
+        "initAdminPass": "pass",
+        "rsaPubKeyFile": "rsaPubKeyFile",
+        "rsaPrivKeyFile": "rsaPrivKeyFile",
+        "tokenValidInHours": 720
+    }
+}
